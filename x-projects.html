@@ -1,5 +1,75 @@
 <link rel="import" href="components/polymer/polymer.html">
+<!--
+`x-projects` encapsulates a projects page into a web component.
 
+      <x-projects id="projects">
+        <h1> Projects </h1>
+        <h2> Projects page</h2>
+      </x-projects>
+
+`x-projects` has a title, a description, many projects composed by photo, name and description.
+
+Title and description:
+
+        <div id="container" class="container">
+            <content select="h1"></content>
+            <content select="h2"></content>
+        </div>
+These values are described as content in the `x-projects` tag, as shown above.
+
+Picture:
+
+    <template repeat="{{ feature in features }}">
+      <img src="images/{{ feature.picture }}">
+
+Description:
+    
+    <h3> {{ feature.description }}</h3>
+          
+Year:
+
+    <p> {{ feature.year }} </p>
+
+
+These values are setted in the `demo.html` file, as described below:
+   
+
+    <script>
+        var projects = document.getElementById('projects');
+        var features = 
+        [
+            {
+              description: "Projects 1" ,
+              year: "project's year",
+              picture: "project-example.jpg"
+            },
+            {
+              description: "Projects 2" ,
+              year: "project's year",
+              picture: "project-example.jpg"
+            },
+            {
+              description: "Projects 3" ,
+              year: "project's year",
+              picture: "project-example.jpg"
+            },
+            {
+              description: "Projects 4" ,
+              year: "project's year",
+              picture: "project-example.jpg"
+            },
+          ];
+          projects.features = features;
+      </script>
+
+
+
+
+@element x-projects
+@blurb Element providing page projects.
+@status alpha
+@homepage https://x-element.github.io/x-projects
+-->
 <polymer-element name="x-projects">
   <template>
  
