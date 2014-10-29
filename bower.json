@@ -1,0 +1,26 @@
+{
+  "name": "x-projects",
+  "version": "1.0.0",
+  "homepage": "http://x-element.github.io/x-projects",
+  "authors": [
+    "AndryGP tizianosperati"
+  ],
+  "description": "x-projects incapsulates a projects page into a web component",
+  "main": "x-projects.html",
+  "keywords": [
+    "polymer",
+    "projects",
+    "x-projects",
+    "web-component",
+    "web-components",
+    "x-element"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
