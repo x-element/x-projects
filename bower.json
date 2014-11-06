@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "homepage": "http://x-element.github.io/x-projects",
   "authors": [
-    "AndryGP tizianosperati"
+  	{ "name": "Andrea D'Amelio", "email": "andrea.damelio@gmail.com" },
+  	{ "name": "Tiziano Sperati", "email": "tiziano.sperati@gmail.com" },
   ],
   "description": "x-projects incapsulates a projects page into a web component",
   "main": "x-projects.html",
